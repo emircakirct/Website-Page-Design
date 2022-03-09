@@ -1,0 +1,266 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4em;
+    height: 5em;
+    background-color: rgb(75, 74, 74);
+    color: whitesmoke;
+    border-bottom: 4px solid rgb(156, 55, 156);
+}
+
+header ul{
+    display:flex;
+    list-style: none;
+    font-size: large;
+}
+
+header ul li{
+    padding:5px;
+    margin-left: 7px;
+}
+
+header ul a:hover{
+color:aquamarine;
+}
+
+#clarusway{
+    color: rgb(156, 55, 156);
+}
+
+header a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.section-1{
+    background-image: url(showcase.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20em;
+    text-align: center;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-1 h1{
+    font-size: 36px;
+    padding: 30px;
+}
+
+.section-2{
+    background-color:rgb(75, 74, 74);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    height:4rem;
+    padding: 16px;
+}
+
+.section-2 input {
+    height: 1em;
+    padding: 1em;
+
+}
+
+.section-2 button {
+    height: 2.3em;
+    padding: 0.3em;
+    color: white;
+    background-color: orange;
+    border: 5px solid orange;
+}
+
+
+.section-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    height: 20em;
+}
+
+.section-3 img {
+    height: 4em;
+    margin-bottom: 1em;
+}
+
+.section-3-logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+}
+
+.section-3 p {
+    text-align: center;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgb(75, 74, 74);
+    height: 5em;
+    font-size: 1em;
+    /* border:5px solid red; */
+    margin-top: 6.6em;
+}
+
+footer p {
+    margin-top: 1em;
+    padding: 1em;
+}
+
+footer img {
+    height: 32px;
+    margin-bottom: 2em;
+}
+
+
+.section2-about,
+.section2-services {
+    padding: 0em 2.7em;
+    height: 5em;
+}
+
+.section3-about {
+    display: flex;
+    justify-content: space-between;
+    height: 30em;
+}
+
+.section3-about h4 {
+    margin-bottom: 1em;
+}
+
+.section3-about .div1 {
+    margin: 2em;
+    padding: 1em;
+}
+
+.dark-text {
+    background-color: rgb(75, 74, 74);
+    color: white;
+    padding: 1em;
+    margin-top: 0.5em;
+}
+
+.section3-about .div2 {
+    background-color: rgb(75, 74, 74);
+    color: white;
+    margin: 2em;
+    height: 10em;
+    padding: 1em;
+}
+
+
+.section3-services {
+    display: flex;
+    justify-content: space-between;
+    height: 30em;
+
+}
+
+.section3-services .div1 {
+    padding: 1em;
+}
+
+.section3-services .div1 h4 {
+    padding: 0.5em;
+}
+
+.section3-services .div1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #E6E6E6;
+    height: 9em;
+    padding: 1em;
+    border: 1px solid white;
+    font-size: 14px;
+
+}
+
+.section3-services .div2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.section3-services form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em;
+    margin: 1em;
+    background-color: #35424A;
+    color: white;
+}
+
+
+.section3-services button {
+    width: 4em;
+    height: 2em;
+    color: white;
+    background-color: orangered;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.section3-services input {
+    height: 2em;
+    outline: none;
+}
+
+.section3-services label {
+    margin: 1em 0em;
+}
+
+@media (max-width: 760px){
+    .heading {
+        width: 80%;
+        text-align: center;
+        overflow-wrap: break-word;
+      }
+      .section-2{
+          display: grid;
+          text-align: center;
+          overflow-wrap: break-word;
+      }
+    
+      .section-1,
+      .section-2,
+      .section-3,
+      .section-2 section2-about,
+      .section3-about,
+      .section-2 section2-services,
+      .section3-services{
+          height: 800px;
+      }
+      .section-3{
+          display: block;
+          text-align: center;
+      }
+  
+      .section-2 section2-about,
+      .section3-about{
+          display: block;
+      }
+  
+    }
